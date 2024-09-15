@@ -1,0 +1,13 @@
+
+In this CTF we are given with a file file. So first of all we will use strings to get all the strings in the file. <br
+Fire strings file in the terminal.
+
+2
+
+We can see that the we have out flag present there CTFlearnH{fl4ggyfHl4g}H. But a hint is given in the challenge stating:
+
+The keyword is hexadecimal, and removing an useless H.E.H.U.H.E. from the flag.
+
+So we will remove all the H's from our flag and we will have our final flag.
+
+Flag is : CTFlearn{fl4ggyfl4g}
