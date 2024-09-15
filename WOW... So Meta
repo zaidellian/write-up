@@ -1,0 +1,6 @@
+However, the flag is not visible inside the image and it is not hidden in its content. However, we can find the flag in the file metadata.
+
+We can use exiftool to extract the file metadata and then filter by CTFlearn using grep:
+
+$ exiftool 3UWLBAUCb9Z2.jpg | grep CTFlearn
+Camera Serial Number        : CTFlearn{EEe_x_I_FFf}  
