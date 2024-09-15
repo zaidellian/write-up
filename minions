@@ -1,0 +1,15 @@
+First, we use strings command and we found a link.
+
+Access the link, we download an image.
+
+Next, we use binwalk to extract the image.
+
+binwalk --extract --dd=".*." Only_Few_Steps.jpg
+
+Again, we found another image.
+
+And again, we use strings command.
+
+Repetitively decoding that base64 string and we will find the flag.
+
+Flag: CTF{M1NI0NS_ARE_C00L}
