@@ -1,0 +1,5 @@
+We just need to use strings command.
+
+Decode base64 string “Q1RGbGVhcm57KV8xbDB3M3kwVW0wMG15MTIzfQ==” and we have the flag.
+
+Flag: CTFlearn{)_1l0w3y0Um00my123}
