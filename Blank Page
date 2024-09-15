@@ -1,0 +1,32 @@
+Open file with xxd we have:
+
+xxd TheMessage.txt
+
+We see a lot spaces and dots. Then, I think about changing the string into binary with a little code.
+
+inp = open("TheMessage.txt", "r")
+l = list(inp.read())
+string = ""
+for i in range(0, len(l)):
+    if l[i] == " ":
+        l[i] = '0'
+    else:
+        l[i] = '1'
+    if i % 8 == 0:
+        string += ' '
+    string += l[i]
+
+outp = open("output.txt", "w")
+outp.write(string)
+
+Run that file and we have a binary string, decode it and we found the flag.
+
+From The Global Anti-Terrorists Tactics
+
+If you read this you passed. Congrats.
+Your first task will come tomorrow.
+Good luck.
+
+CTFlearn{If_y0u_r3/\d_thi5_you_pa553d}
+
+Flag: CTFlearn{If_y0u_r3/\d_thi5_you_pa553d}
