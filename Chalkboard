@@ -1,0 +1,20 @@
+In this CTF we are given with a image math.jpg. So we will use strings command to get the strings associated with the image.
+Fire strings math.jpg in the terminal.
+
+2
+
+We can find a string which gives a hint to find our flag.
+
+CTFlearn{I_Like_Math_x_y}
+where x and y are the solution to these equations:
+3x + 5y = 31
+7x + 9y = 59
+
+So we will find the solutions of the above both equations and put them in the flag.
+
+After solving the above equations we will get the following solutions:
+
+x = 2
+y = 5
+
+Flag is : CTFlearn{I_Like_Math_2_5}
