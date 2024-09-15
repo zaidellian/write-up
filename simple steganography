@@ -1,0 +1,17 @@
+The hint is: “Steghide Might be Helpfull”. Then, we will use Steghide in this challenge.
+
+But, we need a passphrase to extract data from the image.
+
+We have to find the passphrase by using strings command.
+
+The string “myadmin” is a readable string, so I think it might be the passphrase we are looking for.
+
+We use steghide and “myadmin” to extract the data:
+
+steghide extract -sf Minions1.jpeg
+
+Open file “raw.txt“, we found a string: AEMAVABGAGwAZQBhAHIAbgB7AHQAaABpAHMAXwBpAHMAXwBmAHUAbgB9
+
+Next, we decode that base64 string, we have: �C�T�F�l�e�a�r�n�{�t�h�i�s��i�s��f�u�n�}
+
+Flag: CTFlearn{this_is_fun}
